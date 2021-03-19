@@ -111,6 +111,7 @@ mark {
 
 p,
 pre {
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -326,7 +327,7 @@ body {
 
   padding: 0;
 
-  background: #e5e5e5;
+  background: FFFFFF;
 
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -348,6 +349,12 @@ body {
   margin: 0 auto;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+}
+
 /* заголовоки и текст_____________________________________ */
 .section__title {
   font-size: 54px;
@@ -358,7 +365,20 @@ body {
   text-align: left;
 }
 
+.text-s {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
 .text-m {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+
+.text-l {
   font-size: 36px;
   font-weight: 700;
 }
@@ -368,27 +388,21 @@ body {
   padding: 80px 0 126px;
 }
 
-.client__block {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
 .client__text-box p {
   padding: 10px 0;
 }
 /* ________________________________task______________________________ */
 .task__text-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
   padding-top: 124px;
 }
 .task__text-box p {
   padding: 10px 0;
 }
+.task__text-box span {
+  padding-top: 123px ;
+}
+
 .task__animation {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding-top: 50px;
 }
 .task__animation img {
@@ -397,15 +411,89 @@ body {
 /* ___________________________________concept____________________________ */
 
 .concept__block {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 124px 0 75px;
+}
+
+.newFace__block {
+  padding: 0 0 147px;
+
+}
+.concept__animation {
+  display: flex;
 
   padding: 124px 0 75px;
 }
-.concept__block p {
-  padding: 10px 0;
-}
+
 .concept__animation img {
-  padding: 150px 0;
   width: 30%;
+}
+.concept__coment {
+padding-left: 49%;
+padding-bottom: 75px;
+}
+
+.gideLine__block {
+  padding: 124px 0 75px;
+}
+
+
+/* ________________________________animation______________________ */
+.animetion__block {
+  padding: 124px 0 75px;
+
+}
+
+.animation__video video {
+  margin-bottom: 124px;
+}
+
+/* __________________________________steakerpacks_______________________ */
+
+.steakerpacks__block {
+  padding-bottom: 75px;
+}
+.steakerpacks__block  .subtitle{
+  margin-top: 60px;
+}
+.mock-up{
+  margin-top: 125px;
+}
+
+/* __________________________________team_______________________ */
+
+.team {
+  padding-top: 125px;
+}
+.team__block {
+  padding-top: 30px;
+}
+.team__item {
+  padding-bottom: 30px;
+}
+
+/* _________________________________thanks___________________ */
+
+.thanks {
+  max-width: fit-content;
+  margin: 0 auto;
+
+  margin-top: 125px;
+
+  background: #FFFFFF;
+  border: 4px solid #000000;
+  box-sizing: border-box;
+}
+.thanks .section__title {
+  text-align: center;
+  padding: 69px 103px;
+  
+}
+/* ___________________________________projects______________________ */
+
+.projects {
+  padding: 125px 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
 }
