@@ -299,15 +299,6 @@ p {
   margin: 0;
 }
 
-/* :root {
-  --green: #23a455;
-  --yellow: #ffb300;
-} */
-/* 
-.green {
-  background-color: var(--green);
-} */
-
 @font-face {
   font-family: "Montserrat", sans-serif;
   src: url(./fonts/Montserrat-Regular.ttf);
@@ -327,7 +318,7 @@ body {
 
   padding: 0;
 
-  background: FFFFFF;
+  background: #FFFFFF;
 
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -354,7 +345,30 @@ body {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 60px;
 }
+@media screen and (max-width: 1000px) {
+  body {
+  font-size: 18px;
 
+    /* max-width: 1920px; */
+
+    /* text-align: left; */
+
+  }
+  
+  .container {
+    padding: 0 15px;
+  
+    width: calc(100% - 30px);
+    /* margin: 0 auto; */
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* column-gap: 10px; */
+  }
+
+}
 /* заголовоки и текст_____________________________________ */
 .section__title {
   font-size: 54px;
@@ -382,7 +396,30 @@ body {
   font-size: 36px;
   font-weight: 700;
 }
+@media screen and (max-width: 1000px) {
+  .section__title {
+    font-size: 32px;
+  
+    text-align: left;
+  }
+  .section__title br{
+  display: none;
+  }
+  
+  .text-s {
+    font-size: 16px;
 
+  }
+  
+  .text-m {
+    font-size: 20px;
+  }
+  
+  
+  .text-l {
+    font-size: 24px;
+  }
+}
 /* ______________________________client____________________________ */
 .client img {
   padding: 80px 0 126px;
@@ -390,6 +427,15 @@ body {
 
 .client__text-box p {
   padding: 10px 0;
+}
+@media screen and (max-width: 1000px) {
+  .client img {
+    padding: 20px 0 20px;
+  }
+  
+  /* .client__text-box p {
+    padding: 10px 0;
+  } */
 }
 /* ________________________________task______________________________ */
 .task__text-box {
@@ -407,6 +453,27 @@ body {
 }
 .task__animation img {
   width: 25%;
+}
+@media screen and (max-width: 1000px) {
+.task__text-box {
+  padding-top: 30px;
+}
+/* .task__text-box p {
+  padding: 10px 0;
+} */
+.task__text-box span {
+  padding-top: 30px ;
+}
+
+.task__animation {
+  padding-top: 20px;
+}
+.task__animation div{
+  padding-top: 20px;
+}
+.task__animation img {
+  width: 100%;
+}
 }
 /* ___________________________________concept____________________________ */
 
@@ -435,7 +502,33 @@ padding-bottom: 75px;
 .gideLine__block {
   padding: 124px 0 75px;
 }
-
+@media screen and (max-width: 1000px) {
+  .concept__block {
+    padding: 30px 0 30px;
+  }
+  
+  .newFace__block {
+    padding: 0 0 30px;
+  
+  }
+  .concept__animation {
+    display: block;
+  
+    padding: 30px 0 30px;
+  }
+  
+  .concept__animation img {
+    width: 100%;
+  }
+  .concept__coment {
+  padding-left: 0;
+  padding-bottom: 30px;
+  }
+  
+  .gideLine__block {
+    padding: 30px 0 30px;
+  }
+}
 
 /* ________________________________animation______________________ */
 .animetion__block {
@@ -446,7 +539,16 @@ padding-bottom: 75px;
 .animation__video video {
   margin-bottom: 124px;
 }
-
+@media screen and (max-width: 1000px) {
+  .animetion__block {
+    padding: 30px 0 30px;
+  
+  }
+  
+  .animation__video video {
+    margin-bottom: 30px;
+  }
+}
 /* __________________________________steakerpacks_______________________ */
 
 .steakerpacks__block {
@@ -458,7 +560,17 @@ padding-bottom: 75px;
 .mock-up{
   margin-top: 125px;
 }
-
+@media screen and (max-width: 1000px) {
+  .steakerpacks__block {
+    padding-bottom: 30px;
+  }
+  .steakerpacks__block  .subtitle{
+    margin-top: 30px;
+  }
+  .mock-up{
+    margin-top: 30px;
+  }
+}
 /* __________________________________team_______________________ */
 
 .team {
@@ -470,7 +582,17 @@ padding-bottom: 75px;
 .team__item {
   padding-bottom: 30px;
 }
-
+@media screen and (max-width: 1000px) {
+  .team {
+    padding-top: 30px;
+  }
+  .team__block {
+    padding-top: 30px;
+  }
+  .team__item {
+    padding-bottom: 10px;
+  }
+}
 /* _________________________________thanks___________________ */
 
 .thanks {
@@ -488,6 +610,23 @@ padding-bottom: 75px;
   padding: 69px 103px;
   
 }
+@media screen and (max-width: 1000px) {
+  .thanks {
+    max-width: fit-content;
+    margin: 0 auto;
+  
+    margin-top: 30px;
+  
+    background: #FFFFFF;
+    border: 4px solid #000000;
+    box-sizing: border-box;
+  }
+  .thanks .section__title {
+    text-align: center;
+    padding: 20px 40px;
+    
+  }
+}
 /* ___________________________________projects______________________ */
 
 .projects {
@@ -496,4 +635,16 @@ padding-bottom: 75px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 60px;
+}
+@media screen and (max-width: 1000px) {
+  .projects {
+    padding: 30px 0;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
+  .projects a {
+    padding-top: 20px;
+  }
 }
