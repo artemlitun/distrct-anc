@@ -356,9 +356,9 @@ body {
   }
   
   .container {
-    padding: 0 15px;
+    padding: 0 28px;
   
-    width: calc(100% - 30px);
+    width: calc(100% - 54px);
     /* margin: 0 auto; */
   }
   
@@ -451,9 +451,19 @@ body {
 .task__animation {
   padding-top: 50px;
 }
+
 .task__animation img {
   width: 25%;
 }
+
+.task__animation-right-side {
+  text-align: right;
+}
+
+.task__animation-right-side  img{
+  margin: 0 0 0 auto;
+}
+
 @media screen and (max-width: 1000px) {
 .task__text-box {
   padding-top: 30px;
@@ -468,6 +478,14 @@ body {
 .task__animation {
   padding-top: 20px;
 }
+.task__animation {
+  padding-top: 20px;
+}
+.task__animation.text-l{
+  text-align: center;
+}
+
+
 .task__animation div{
   padding-top: 20px;
 }
@@ -486,13 +504,13 @@ body {
 
 }
 .concept__animation {
-  display: flex;
+  /* display: flex; */
 
   padding: 124px 0 75px;
 }
 
 .concept__animation img {
-  width: 30%;
+  width: 100%;
 }
 .concept__coment {
 padding-left: 49%;
@@ -579,9 +597,11 @@ padding-bottom: 75px;
 .team__block {
   padding-top: 30px;
 }
+
 .team__item {
-  padding-bottom: 30px;
+  font-size: 18px;
 }
+
 @media screen and (max-width: 1000px) {
   .team {
     padding-top: 30px;
@@ -589,6 +609,7 @@ padding-bottom: 75px;
   .team__block {
     padding-top: 30px;
   }
+
   .team__item {
     padding-bottom: 10px;
   }
