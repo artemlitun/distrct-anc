@@ -396,6 +396,7 @@ body {
   font-size: 36px;
   font-weight: 700;
 }
+
 @media screen and (max-width: 1000px) {
   .section__title {
     font-size: 32px;
@@ -458,7 +459,9 @@ body {
 
 
 
-.task__animation img {
+.task__animation video {
+  max-width: 250px;
+  margin-bottom: 0 auto;
   width: auto;
 }
 
@@ -478,8 +481,13 @@ body {
   margin: 0 0 0 auto;
 }
 
-[data-aos=fade-right] {
-  transform: translate3d(-300px,0,0);
+/* [data-aos=fade-right] {
+  transform: translate3d(-100%,0,0);
+} */
+
+[data-aos=slide-left-robot] {
+  transform: translate3d(200%,0,0)
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -525,8 +533,6 @@ body {
 
 }
 .concept__animation {
-  /* display: flex; */
-
   padding: 124px 0 75px;
 }
 
@@ -547,6 +553,73 @@ padding-bottom: 75px;
 .gideLine__block {
   padding: 124px 0 75px;
 }
+/* ____________________________ba__slider__________________ */
+@import "lesshat";
+
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.ba-slider img {
+    width: 100%;
+    display:block;
+}
+ 
+.resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+ 
+  /* background: rgba(0,0,0,.5); */
+  cursor: ew-resize;
+}
+ 
+.handle:after {  /* Big orange knob  */
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+ 
+    content:'\21d4';
+    color:white;
+    font-weight:bold;
+    font-size:36px;
+    text-align:center;
+    line-height:64px;
+ 
+    background: #ffb800; /* @orange */
+    border:1px solid #e6a600; /* darken(@orange, 5%) */
+    border-radius: 50%;
+    transition:all 0.3s ease;
+    box-shadow:
+      0 2px 6px rgba(0,0,0,.3), 
+      inset 0 2px 0 rgba(255,255,255,.5),
+      inset 0 60px 50px -30px #ffd466; /* lighten(@orange, 20%)*/ 
+}
+
+.draggable:after {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    line-height:48px;
+    font-size:30px;
+}
+
 @media screen and (max-width: 1000px) {
   .concept__block {
     padding: 30px 0 30px;
@@ -576,7 +649,7 @@ padding-bottom: 75px;
 }
 
 /* ________________________________animation______________________ */
-.animetion__block {
+.animation__block {
   padding: 124px 0 75px;
 
 }
@@ -585,7 +658,7 @@ padding-bottom: 75px;
   margin-bottom: 124px;
 }
 @media screen and (max-width: 1000px) {
-  .animetion__block {
+  .animation__block {
     padding: 30px 0 30px;
   
   }
@@ -642,39 +715,11 @@ padding-bottom: 75px;
   }
 }
 /* _________________________________thanks___________________ */
-
-.thanks {
-  max-width: fit-content;
-  margin: 0 auto;
-
-  margin-top: 125px;
-
-  background: #FFFFFF;
-  border: 4px solid #000000;
-  box-sizing: border-box;
-}
-.thanks .section__title {
+.thanks-animation {
+  padding-top: 54px;
   text-align: center;
-  padding: 69px 103px;
-  
 }
-@media screen and (max-width: 1000px) {
-  .thanks {
-    max-width: fit-content;
-    margin: 0 auto;
-  
-    margin-top: 30px;
-  
-    background: #FFFFFF;
-    border: 4px solid #000000;
-    box-sizing: border-box;
-  }
-  .thanks .section__title {
-    text-align: center;
-    padding: 20px 40px;
-    
-  }
-}
+
 /* ___________________________________projects______________________ */
 
 .projects {
