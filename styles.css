@@ -111,7 +111,7 @@ mark {
 
 p,
 pre {
-  padding: 10px 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -502,8 +502,8 @@ cursor: ew-resize;
   text-align:center;
   line-height:64px;
 
-  background: #ffb800; /* @orange */
-  border:1px solid #e6a600; /* darken(@orange, 5%) */
+  background:  linear-gradient(270deg, #FF80DB 0%, #76DAE5 89.09%); /* @orange */
+  border:1px solid linear-gradient(270deg, #FF80DB 0%, #76DAE5 89.09%); /* darken(@orange, 5%) */
   border-radius: 50%;
   transition:all 0.3s ease;
   box-shadow:
@@ -595,7 +595,7 @@ padding-bottom: 75px;
 }
 
 .animation__video iframe {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 
@@ -609,31 +609,10 @@ padding-bottom: 75px;
     margin-bottom: 30px;
   }
 }
-/* __________________________________steakerpacks_______________________ */
 
-.steakerpacks__block {
-  padding-bottom: 75px;
-}
-.steakerpacks__block  .subtitle{
-  margin-top: 60px;
-}
-.mock-up{
-  margin-top: 125px;
-}
-@media screen and (max-width: 1000px) {
-  .steakerpacks__block {
-    padding-bottom: 30px;
-  }
-  .steakerpacks__block  .subtitle{
-    margin-top: 30px;
-  }
-  .mock-up{
-    margin-top: 30px;
-  }
-}
 /* _____________________________________stickers_____________________ */
 .stickers__block {
-  margin-top: 125px;
+  margin-top: 105px;
 }
 .stickers__block-text {
   grid-column-start: 1;
@@ -642,20 +621,34 @@ padding-bottom: 75px;
 
   align-self: center;
   justify-self: center;
-
 }
-.stickers__block video {
+.stickers__block-text p {
+  padding-top: 20px;
+}
+/* .stickers__block video {
   max-width: 500px;
+} */
+.stickers__block-animation {
+  text-align: center;
 }
+
+.stickers__block-btn a {
+  display: inline-block;
+
+  background-color: #0099cc;
+
+  border-radius: 30px;
+
+  padding: 10px 25px;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 1000px) {
   .stickers__block{
     display: block;
     margin-top: 60px;
   }
   
-
-  
-
   .task__animation-right-side {
    margin-top: 20px;
   
@@ -668,7 +661,6 @@ padding-bottom: 75px;
     text-align: center;
   }
   
-  
   .task__animation div{
     padding-top: 20px;
   }
@@ -676,6 +668,29 @@ padding-bottom: 75px;
     width: 100%;
   }
   }
+
+/* __________________________________steakerpacks_______________________ */
+
+.steakerpacks__block {
+  padding: 105px 0 75px;
+  /* padding-bottom: 75px; */
+}
+
+.mock-up{
+  margin-top: 125px;
+}
+
+@media screen and (max-width: 1000px) {
+  .steakerpacks__block {
+    padding-bottom: 30px;
+  }
+  .steakerpacks__block  .subtitle{
+    margin-top: 30px;
+  }
+  .mock-up{
+    margin-top: 30px;
+  }
+}
 
 
 
