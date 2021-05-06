@@ -712,9 +712,10 @@ padding-bottom: 75px;
 
 .team__item {
   font-size: 18px;
-}
-.team__item {
   padding: 4px 0;
+}
+.team__items br {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -726,6 +727,9 @@ padding-bottom: 75px;
   }
   .team__items {
     padding-top: 10px;
+  }
+  .team__items br {
+    display: block;
   }
   .team__item {
     padding: 3px 0;
